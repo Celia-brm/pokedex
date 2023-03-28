@@ -1,8 +1,4 @@
-function PokemonCard() {
-    const pokemon =  {
-        name: "mew"
-      };
-
+function PokemonCard({pokemon}) {
     return <figure>{
         pokemon.imgSrc ? <img src={pokemon.imgSrc} alt="pokemon"/> : <p>???</p>}
         {/* <img src={pokemon.imgSrc} alt="pokemon"/> */}
@@ -11,15 +7,11 @@ function PokemonCard() {
 };
 
 
-const pokemonList = [
-    {
-      name: "bulbasaur",
-      imgSrc:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-    },
-    {
-      name: "mew",
-    },
-  ];
+// function Cart(props) {
+//     const { product, calculate } = props;
+  
+//     return `You bought ${product.quantity} ${product.name} for ${calculate(product)}€`;
+//   }
+
 
  export default PokemonCard;
