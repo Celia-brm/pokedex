@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function PokemonCard({pokemon}) {
     return <figure>{
         pokemon.imgSrc ? <img src={pokemon.imgSrc} alt="pokemon"/> : <p>???</p>}
@@ -6,12 +8,15 @@ function PokemonCard({pokemon}) {
     </figure>
 };
 
+/* -------------------------------- prototype ------------------------------- */
 
-// function Cart(props) {
-//     const { product, calculate } = props;
-  
-//     return `You bought ${product.quantity} ${product.name} for ${calculate(product)}€`;
-//   }
+PokemonCard.prototype= {
+    pokemon : PropTypes.shape({
+            name: PropTypes.string,
+            imgSrc : PropTypes.string,          
+   }).isRequired,
+}
+
 
 
  export default PokemonCard;
