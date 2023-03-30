@@ -1,12 +1,16 @@
 import PropTypes from "prop-types";
+import TypeColor from "./TypeColor.jsx";
 
 
 function PokemonCard({pokemon})  {
-    return <figure>{
-        pokemon.imgSrc ? <img src={pokemon.imgSrc} alt="pokemon"/> : <p>???</p>}
-        {/* <img src={pokemon.imgSrc} alt="pokemon"/> */}
+    return (
+    <>    
+        <figure style={{background: TypeColor[pokemon.typeColor]}}>
+        {pokemon.imgSrc ? <img src={pokemon.imgSrc} alt="pokemon"/> : <p>???</p>}
         <figcaption>{pokemon.name}</figcaption>
-    </figure>
+        </figure>
+     </>
+    )
 };
 
 /* -------------------------------- prototype ------------------------------- */
@@ -14,10 +18,13 @@ function PokemonCard({pokemon})  {
 PokemonCard.prototype= {
     pokemon : PropTypes.shape({
             name: PropTypes.string,
-            imgSrc : PropTypes.string,          
+            imgSrc : PropTypes.string,  
+                
    }).isRequired,
 }
 
 
 
  export default PokemonCard;
+
+  {/* <img src={pokemon.imgSrc} alt="pokemon"/> */}
