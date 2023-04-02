@@ -7,13 +7,13 @@ function Navbar({pokemonIndex, setPokemonIndex,pokemonList}){
   const incrimClick = () => {
     setPokemonIndex(pokemonIndex + 1);
     if (pokemonList[pokemonIndex + 1].name == "pikachu") { 
-    alert("pika pikachu !!!")
+    // alert("pika pikachu !!!")
     };     
   }
   const decrimClick = () => {
     setPokemonIndex(pokemonIndex - 1);
     if (pokemonList[pokemonIndex - 1].name == "pikachu") { 
-      alert("pika pikachu !!!")
+      // alert("pika pikachu !!!")
     };  
   }
 

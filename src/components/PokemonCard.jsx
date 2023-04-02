@@ -6,7 +6,7 @@ function PokemonCard({pokemon})  {
     return (
     <>    
         <figure style={{background: TypeColor[pokemon.typeColor]}}>
-        {pokemon.imgSrc ? <img src={pokemon.imgSrc} alt="pokemon"/> : <p>???</p>}
+        {pokemon.imgSrc ? <img className="imgPok" src={pokemon.imgSrc} alt="pokemon"/> : <p>???</p>}
         <figcaption>{pokemon.name}</figcaption>
         </figure>
      </>

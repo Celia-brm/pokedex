@@ -2,8 +2,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0.5rem;
   text-align: center;
+ 
 }
 
 .logo {
@@ -44,7 +45,7 @@
 
 figure{
   border-radius: 15px;
-  padding: 20px;
+  padding: 35px;
 }
 
 button{
@@ -55,8 +56,17 @@ button{
 figcaption{
   background-color: aliceblue;
   border-radius: 15px;
-  padding: 10px;
+  padding: 25px;
+  margin-top: 15px;
   
+}
 
+.imgPok{
+   border-radius: 15px;
+   /* padding: 0 10px; */
+   background-color: white;
+   border-radius: 15px; 
+   box-Shadow: "0px 0px 5px gray";
 
+  
 }
