@@ -9,7 +9,7 @@ function Navbar({setPokemonIndex,pokemonList}){
         <div>
            {
             pokemonList.map((pokemon, index) => ( 
-              <button onClick={() => setPokemonIndex(index)}>{pokemon.name}</button>
+              <button key={pokemon.name} onClick={() => setPokemonIndex(index)}>{pokemon.name}</button>
               ))
            }
         </div>
